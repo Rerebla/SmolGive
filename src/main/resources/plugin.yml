@@ -1,0 +1,25 @@
+name: SmolGive
+version: ${project.version}
+main: me.rerebla.smolgive.smolgive.SmolGive
+api-version: 1.16
+authors: [ Rerebla ]
+description: A give command, but only for certain items, that are allowed by the operators
+commands:
+  sGive:
+    description: Gives the player items, but only if a operator has given the permission for that item.
+    usage: /sgive <item> <ammount>
+  sRegister:
+    description: Operators can add permissions to a player
+    usage: /sregister <playerName> <permission>
+  sRemove:
+    description:  Operators can remove permissions of a player
+    usage: /sremove <playerName> <permission>
+  sRemoveAll:
+    description: Operators can remove all permissions of a player
+    usage: /sremoveall <playerName>
+  sAllPermissions:
+    description: Prints all permissions of the sender
+    usage: /sallpermissions
+  sAllPermissionsOfPlayer:
+    description: Prints all permissions of the specified player
+    usage: /sallpermissionsofplayer <playerName>
